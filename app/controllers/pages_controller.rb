@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   
   def album
+    puts "Album-1: #{params}"
     @album = Album.find(params[:format])
   end
 

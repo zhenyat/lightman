@@ -1,0 +1,13 @@
+.container-fluid
+  .row
+    - @newsbites.each do |newsbite|
+      .row.my_row
+        .col-sm-3.vcenter.text-center
+          - if newsbite.cover.present?
+            = image_tag newsbite.cover.preview
+          - else
+            = newsbite.title
+        .col-sm-8.vcenter.text-justify
+          = raw newsbite.content
+          = zt_date newsbite.published_on
+      %br

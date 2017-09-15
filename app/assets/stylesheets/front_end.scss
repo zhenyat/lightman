@@ -21,3 +21,12 @@ footer {
 .zt_card {
   background-color: darkgrey;
 }
+
+//  https://gist.github.com/nullvariable/5347ffce56d9b2c50e7f4905d061c92b
+.card-img-left {
+  border-bottom-left-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  float: left;
+  padding-right: 1em;
+  margin-bottom: -1.25em;
+}

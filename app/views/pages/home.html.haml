@@ -3,27 +3,6 @@
 %br
 = render("shared/carousel_images",   images:   @carousel_covers) if @carousel_covers.present?
 %br
-
 = render("shared/directions")
-
 %br
-  
-
-  .row
-    /%h2.col-sm-12.text-center Наши новости
-    %br
-    %br
-    %br
-    - @newsbites.each do |newsbite|
-      .row.my_row
-        .col-sm-3.vcenter.text-center
-          - if newsbite.cover.present?
-            = image_tag newsbite.cover.preview
-          - else
-            = newsbite.title
-        .col-sm-8.vcenter.text-justify
-          = raw newsbite.content
-          %br
-          %br
-          = zt_date newsbite.published_on
-      %br
+= render("shared/news")

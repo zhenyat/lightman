@@ -17,7 +17,7 @@
               %h3= value.model.title
         - else
           .carousel-item
-            = link_to image_tag(value.model.cover.view.url, :class => "d-block img-fluid ml-auto mr-auto"), pages_album_path(value.model.id)
+            = link_to image_tag(value.model.cover.view.url, :class => "d-block img-fluid ml-auto mr-auto"), pages_album_path(value.model.id) 
             .carousel-caption
               %h3= value.model.title
 

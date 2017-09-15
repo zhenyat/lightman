@@ -1,0 +1,9 @@
+.container-fluid
+  .card-deck
+    - @directions.each do |direction|
+      - if direction.cover.present?
+        .card.p-3.text-center.zt_card
+          %h4.card-title= direction.title
+          .card-img-top= link_to image_tag(direction.cover.view), "pages/#{direction.name}"
+      - else
+        = link_to direction.title, "pages/#{direction.name}"

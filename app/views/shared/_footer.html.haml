@@ -1,0 +1,12 @@
+%footer
+  .container
+    %hr
+      .row
+        .col-sm-offset-1.col-sm-6.vcenter
+          = "© Lightman School, 2017"
+        .col-sm-3.vcenter
+          = image_tag "logos/ZT_Lab_6.png", size: "32x32"
+          = "Разработка сайта"
+        .col-sm-3.vcenter
+          = "Илья Кулешов (логотип)"
+    = render 'shared/debug' if ZT_DEBUG

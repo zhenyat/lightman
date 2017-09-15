@@ -1,0 +1,32 @@
+.row
+  .col-sm-6
+    = simple_form_for([:admin, @album], html: {multipart: true}) do |f|
+      = f.error_notification message: t('messages.error_notification')
+
+      .form-inputs
+        = f.input :title
+
+        .input-group-addon
+          = f.input :cover, as: :file
+          - if f.object.cover?
+            .input-group
+              = image_tag @album.cover.thumb.url
+              .input-group-addon
+                = f.input :remove_cover, as: :boolean
+
+        = f.input :content,  as: :ckeditor, input_html: { ckeditor: { toolbar: 'mini' } }
+
+        .input-group-addon
+          = f.input :images, as: :file, :input_html => { :multiple => true } 
+
+        = f.input :position, as: :hidden
+
+        = f.input :status, default: 1
+        /= render 'admin/shared/status_buttons', f: f
+
+      .form_actions
+        .row
+          .col-sm-3
+            = f.submit t('actions.save'), class: 'btn btn-primary btn-block'
+          .col-sm-3
+            = link_to t('actions.back'), admin_albums_path, class: 'btn btn-default btn-block'

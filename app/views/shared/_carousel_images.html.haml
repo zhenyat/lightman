@@ -1,0 +1,34 @@
+/ BS 4 is applied ( https://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_carousel.cfm 
+.container-fluid
+  #myCarousel.carousel.slide.carousel-fade{"data-ride" => "carousel", "data-interval" => "4000"}
+    / Indicators
+    %ol.carousel-indicators
+      %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+      - for i in 1..images.count-1
+        %li{"data-slide-to" => "i", "data-target" => "#myCarousel"}
+
+    / Wrapper for slides
+    .carousel-inner{:role => "listbox"}
+      - images.each_with_index do |value, index|
+        - if index == 0
+          .carousel-item.active
+            = link_to image_tag(value.model.cover.view.url, :class => "d-block img-fluid ml-auto mr-auto"), pages_album_path(value.model.id)
+            .carousel-caption
+              %h3= value.model.title
+        - else
+          .carousel-item
+            = link_to image_tag(value.model.cover.view.url, :class => "d-block img-fluid ml-auto mr-auto"), pages_album_path(value.model.id)
+            .carousel-caption
+              %h3= value.model.title
+
+    / Left and right controls
+    %a.carousel-control-prev{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
+      %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+      %span.carousel-control-prev-icon{"aria-hidden" =>"true"}
+      %span.sr-only= t :previous
+    %a.carousel-control-next{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
+      %span.carousel-control-next-icon{"aria-hidde" =>"true"}
+      %span.sr-only= t :next
+%br
+%br
+

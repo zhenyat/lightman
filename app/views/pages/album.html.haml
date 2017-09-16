@@ -2,10 +2,10 @@
   %h1.text-center= "#{@album.title}"
 
   .row
-    .col-sm-offset-2.col-sm-8
+    .col-md-offset-2.col-md-10
       = raw @album.content
   .row
-    .col-sm-offset-1.col-sm-10.text-center
+    .col-md-offset-2.col-md-10.text-center
       - @album.images.each do |image|
         = link_to image_tag(image.view.url, height: '200'), image.view.url, data: {lightbox: "example-set", title: @album.title}
 

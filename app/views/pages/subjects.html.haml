@@ -3,11 +3,11 @@
 .container-fluid
   - @subjects.each do |subject|
     .row.my_row
-      .col-sm-3.vcenter.text-center.my_col
+      .col-md-3.vcenter.text-center.my_col
         - if subject.cover.present?
           = image_tag subject.cover.preview
         - else
           = subject.title
-      .col-sm-8.vcenter.text-justify
+      .col-md-8.vcenter.text-justify
         = raw subject.content
     %br

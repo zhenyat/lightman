@@ -1,11 +1,12 @@
 body {
   padding-top: 10px;
   /*background-color: rgb(83, 70, 17);*/
-  background-color: rgb(32, 31, 36);
+  /*background-color: rgb(32, 31, 36);*/
   /*background-color: rgb(66, 66, 71);*/
   /*background-color: rgb(92, 92, 98);*/
+  background-color: rgb(235, 233, 174);;
   margin: 20px;
-  color: rgb(235, 233, 174);
+  /*color: rgb(235, 233, 174);*/
   /*color: white;*/
 }
 
@@ -19,9 +20,13 @@ footer {
 }
 
 .zt_card {
-  background-color: darkgrey;
+  background-color: rgb(255, 253, 30);
 }
 
+.my_row {
+  /*background-color: rgb(255, 253, 30);*/
+  /*color: black;*/
+}
 //  https://gist.github.com/nullvariable/5347ffce56d9b2c50e7f4905d061c92b
 .card-img-left {
   border-bottom-left-radius: calc(.25rem - 1px);
@@ -29,4 +34,8 @@ footer {
   float: left;
   padding-right: 1em;
   margin-bottom: -1.25em;
+}
+.jumbotron {
+  background-color: rgb(32, 31, 36);
+  color: rgb(255, 253, 30);
 }

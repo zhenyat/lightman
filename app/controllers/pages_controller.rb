@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   
   def home
     @directions = Direction.active
-    @newsbites  = Newsbite.active.actual
+    @newsbites  = Newsbite.active.actual.order(:published_on).reverse_order
     
     @albums = Album.active
     @carousel_covers = []

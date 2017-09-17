@@ -16,8 +16,12 @@
 
         = f.input :content,  as: :ckeditor, input_html: { ckeditor: { toolbar: 'mini' } }
 
-        .input-group-addon
-          = f.input :images, as: :file, :input_html => { :multiple => true } 
+        - if @album.images?
+          %p.text-primary= "Загружено фотографий: #{@album.images.count}"
+          %p.text-primary= "Просмотреть / удалить / добавить - в режиме просмотра"
+        - else
+          .input-group-addon
+            = f.input :images, as: :file, :input_html => { :multiple => true } 
 
         = f.input :position, as: :hidden
 

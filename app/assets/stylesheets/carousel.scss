@@ -1,0 +1,45 @@
+/*
+ *   Provides correct sliding (one-by-one))
+ */
+carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+ 
+ // https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel
+
+/*                           Not needed now
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  //border-radius: 50%;*
+  //border: 1px solid black;
+  background-image: none;/*
+}
+
+.carousel-control-next-icon:after,
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(66, 66, 71)
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(66, 66, 71);
+}
+*/

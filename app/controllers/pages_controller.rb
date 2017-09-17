@@ -13,13 +13,18 @@ class PagesController < ApplicationController
     @directions = Direction.active
     @newsbites  = Newsbite.active.actual.order(:published_on).reverse_order
     
-    @albums = Album.active
+    @albums = Album.active.shuffle
     @carousel_covers = []
     @albums.each do |a|
       @carousel_covers << a.cover
     end
+    
+    # Carousel workaround: shift titles fore slides
+    @carousel_titles = []
+    @albums.each {|a| @carousel_titles << a.title if a !=@albums.first}
+    @carousel_titles << @albums.first.title
   end
-
+  
   def subjects
     @subjects = Subject.active
   end

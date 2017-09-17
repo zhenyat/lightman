@@ -28,9 +28,9 @@
   .input-group-addon
     = form_for @album, url: admin_album_images_path(@album), method: :post do |f| # use customized url endpoint 
       .row
-        .col-md-2
+        .col-md-3
           = f.file_field :images, multiple: true
-        .col-md-2
+        .col-md-3
         = f.submit "Add More Images"
 
 .form_actions

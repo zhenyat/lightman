@@ -4,7 +4,7 @@ body {
   /*background-color: rgb(32, 31, 36);*/
   /*background-color: rgb(66, 66, 71);*/
   /*background-color: rgb(92, 92, 98);*/
-  background-color: rgb(235, 233, 174);;
+  background-color: rgb(235, 233, 174);
   margin: 20px;
   /*color: rgb(235, 233, 174);*/
   /*color: white;*/
@@ -20,7 +20,8 @@ footer {
 }
 
 .zt_card {
-  background-color: rgb(255, 253, 30);
+  background-color: rgb(66, 66, 71);
+  color: rgb(255, 253, 30);
 }
 
 .my_row {
@@ -38,4 +39,29 @@ footer {
 .jumbotron {
   background-color: rgb(32, 31, 36);
   color: rgb(255, 253, 30);
+}
+
+// https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  /*border-radius: 50%;*/
+  /*border: 1px solid black;*/
+  background-image: none;
+}
+
+.carousel-control-next-icon:after,
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(66, 66, 71)
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(66, 66, 71);
 }

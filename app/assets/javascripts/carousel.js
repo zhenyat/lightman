@@ -1,7 +1,7 @@
 // https://www.codeply.com/go/FrzoIEKCdH/bootstrap-4-carousel-multiple
 
 $('#recipeCarousel').carousel({
-    interval: 4000
+    interval: 5000
   });
 
 $('.carousel .carousel-item').each(function(){

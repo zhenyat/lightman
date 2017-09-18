@@ -17,7 +17,7 @@
         %td= tour.started_on
         %td= tour.finished_on
         %td= tour.content
-        %td= tour.cover
+        %td= image_tag tour.cover.thumb.url if tour.cover?
         %td= status_mark tour.status
         %td= render 'admin/shared/index_buttons', resource: tour
 %br

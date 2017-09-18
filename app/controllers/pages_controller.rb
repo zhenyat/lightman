@@ -5,8 +5,8 @@ class PagesController < ApplicationController
     @album = Album.find(params[:format])
   end
 
-  def clubs
-    @clubs = Club.active
+  def events
+    @events = Event.active
   end
   
   def home

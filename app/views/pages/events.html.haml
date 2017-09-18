@@ -1,0 +1,19 @@
+%h1.text-center Мероприятия
+
+.container-fluid
+  - @events.each do |tour|
+    .row
+      .col-md-2.text-center
+        - if event.cover.present?
+          = image_tag tour.cover.preview
+        - else
+          = event.title
+      .col-md-10
+        .row
+          .col-md-10.text-center
+            = "#{event.knd}: #{event.title}"
+          .col-md-10
+            = raw event.content
+    %br
+    
+

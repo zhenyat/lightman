@@ -1,0 +1,22 @@
+%h1= t Event.model_name.human
+%table.table.table-striped
+  %tbody
+    - @event.attributes.each do |key, value|
+      - if key == 'id' || key.include?('digest') || key == 'created_at' || key == 'updated_at'
+        //skip these attributes
+      -else
+        %tr
+          - if key == 'status'
+            %td= t 'status.status'
+            %td= status_mark @event.status
+          - elsif key == 'cover'
+            %td= t 'cover'
+            %td= image_tag @event.cover.thumb.url if @event.cover?
+          -else
+            %td= t "activerecord.attributes.event.#{key}"
+            %td= value
+
+.form_actions
+  .row
+    .col-md-2
+      = link_to t('actions.back'), admin_events_path, class: 'btn btn-primary btn-block'

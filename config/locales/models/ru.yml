@@ -7,9 +7,9 @@ ru:
       user:
         one:                    Пользователь
         other:                  Пользователи
-      club:
-        one:                    Клуб
-        other:                  Клубы   
+      event:
+        one:                    Мероприятие
+        other:                  Мероприятия   
       direction:
         one:                    Направление
         other:                  Направления
@@ -31,6 +31,14 @@ ru:
         images:                 Фото
         status:                 Статус
         position:               Позиция
+      event:
+        title:                  Наименование
+        kind:                   Тип события
+        started_on:             Дата начала
+        finished_on:            Дата окончания
+        content:                Контент на странице
+        cover:                  Обложка
+        status:                 Статус       
       direction:
         name:                   Имя в базе
         title:                  Наименование

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  kind: MyString
+  started_on: 2017-09-18
+  finished_on: 2017-09-18
+  content: MyText
+  cover: MyString
+  status: 1
+
+two:
+  title: MyString
+  kind: MyString
+  started_on: 2017-09-18
+  finished_on: 2017-09-18
+  content: MyText
+  cover: MyString
+  status: 1

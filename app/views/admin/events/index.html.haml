@@ -6,7 +6,7 @@
       %th= Event.human_attribute_name(:kind)
       %th= Event.human_attribute_name(:started_on)
       %th= Event.human_attribute_name(:finished_on)
-      %th= Event.human_attribute_name(:content)
+      /%th= Event.human_attribute_name(:content)
       %th= Event.human_attribute_name(:cover)
       %th= Event.human_attribute_name(:status)
       %th= t 'actions.actions'
@@ -18,7 +18,7 @@
         %td= event.kind
         %td= event.started_on
         %td= event.finished_on
-        %td= event.content
+        /%td= event.content
         %td= image_tag event.cover.thumb.url if event.cover?
         %td= status_mark event.status
         %td= render 'admin/shared/index_buttons', resource: event

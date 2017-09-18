@@ -6,5 +6,5 @@
 
 = debug "Versions: #{RUBY_ENGINE}-#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL} | Rails: #{Rails.version}"
 
-- if GIT_BRANCH.present?
+- if Rails.env.development? && GIT_BRANCH.present?
   = debug "Git branch: #{GIT_BRANCH}; Commit: #{GIT_COMMIT} (#{l GIT_COMMIT_TIMESTAMP, format: '%d.%m.%Y %H:%M'})"

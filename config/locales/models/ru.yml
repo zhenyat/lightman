@@ -52,6 +52,7 @@ ru:
         cover:                  Обложка
         published_on:           Дата публикации
         status:                 Статус
+        annotation:             Аннотация
       subject:
         name:                   Имя в базе
         title:                  Наименование

@@ -1,14 +1,19 @@
 %h3.text-center Наши новости
 .container-fluid
-  .row
-    - @newsbites.each do |newsbite|
-      .row
-        .col-md-3.vcenter.text-center
-          - if newsbite.cover.present?
-            = image_tag newsbite.cover.preview
-          - else
-            = newsbite.title
-        .col-md-8.vcenter.text-justify
-          = raw newsbite.content
-          = zt_date newsbite.published_on
-      %br
+  - @newsbites.each do |newsbite|
+    .row
+      .col-md-4.vcenter.text-center
+        - if newsbite.cover.present?
+          = image_tag newsbite.cover.preview
+        - else
+          = newsbite.title
+      .col-md-7.vcenter.text-justify
+        %strong= raw newsbite.title
+        %br
+        = raw newsbite.annotation
+        %br
+        %br
+        = zt_date newsbite.published_on
+        %br
+        = link_to 'Подробнее', pages_newsbite_path(newsbite.id), class: 'btn btn-info btn-sm'
+    %br

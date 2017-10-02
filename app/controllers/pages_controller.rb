@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   
   def album
-    puts "Album-1: #{params}"
     @album = Album.find(params[:format])
   end
 
@@ -23,6 +22,10 @@ class PagesController < ApplicationController
     @carousel_titles = []
     @albums.each {|a| @carousel_titles << a.title if a !=@albums.first}
     @carousel_titles << @albums.first.title
+  end
+  
+  def newsbite
+    @newsbite = Newsbite.find(params[:format])
   end
   
   def subjects

@@ -62,6 +62,6 @@ class Admin::NewsbitesController < Admin::BaseController
 
     # Only allows a trusted parameter 'white list' through
     def newsbite_params
-      params.require(:newsbite).permit(:title, :content, :cover, :published_on, :status, :remove_cover)
+      params.require(:newsbite).permit(:title, :content, :cover, :published_on, :status, :annotation, :remove_cover)
     end
 end

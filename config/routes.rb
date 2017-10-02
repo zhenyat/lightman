@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Front End Pages
   get 'pages/album'
   get 'pages/events'
+  get 'pages/newsbite'
   get 'pages/subjects'
   get 'pages/tour'
   get 'pages/tours'

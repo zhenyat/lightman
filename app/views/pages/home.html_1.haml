@@ -1,0 +1,9 @@
+/%h1 Добро пожаловать в Lightman School!
+%br
+%br
+= render("shared/directions")
+%hr
+= render("shared/carousel_images",   images:   @carousel_covers) if @carousel_covers.present?
+%hr
+%br
+= render("shared/news")

@@ -28,32 +28,24 @@ footer {
   /*background-color: rgb(255, 253, 30);*/
   /*color: black;*/
 }
-
-.navbar-brand
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
-}
-
 //  https://gist.github.com/nullvariable/5347ffce56d9b2c50e7f4905d061c92b
 .card-img-left {
-  border-bottom-left-radius:  calc(.25rem - 1px);
-  border-top-left-radius:     calc(.25rem - 1px);
-  float:                      left;
-  padding-right:              1em;
-  margin-bottom:              -1.25em;
+  border-bottom-left-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  float: left;
+  padding-right: 1em;
+  margin-bottom: -1.25em;
 }
+/*.jumbotron {
+  background-color: rgb(59, 166, 224) !important;
+  background-color: rgb(32, 31, 36) !important;
+  color: rgb(255, 253, 30);
+}*/
+
 .jumbotron {
-  background:               url('panoramic.jpg') no-repeat center center;
-  background-size:          cover;
-  -webkit-background-size:  cover;
-  -moz-background-size:     cover;
-  -o-background-size:       cover;
-  background-size:          cover;
-  min-height:               400px;
-  color:                    white;
+  padding:        30px 15px;
+  margin-bottom:  30px;
+  color:          white;
+  background:     url('panoramic.jpg')
 }
  

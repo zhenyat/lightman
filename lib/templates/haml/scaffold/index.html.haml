@@ -22,9 +22,9 @@
 <%- end -%>
 
         %td.buttons
-          = link_to image_tag('buttons/show.png',   alt: t('actions.show'),    title: t('actions.show')),      <%= singular_table_name %>
-          = link_to image_tag('buttons/edit.png',   alt: t('actions.edit'),    title: t('actions.edit')), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
-          = link_to image_tag('buttons/delete.png', alt: t('actions.delete'),  title: t('actions.delete')),    <%= singular_table_name %>, method: :delete, data: {confirm: t('messages.confirm')}
+          = link_to image_tag('buttons/show.png',   title: t('actions.show'),    title: t('actions.show')),      <%= singular_table_name %>
+          = link_to image_tag('buttons/edit.png',   title: t('actions.edit'),    title: t('actions.edit')), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
+          = link_to image_tag('buttons/delete.png', title: t('actions.delete'),  title: t('actions.delete')),    <%= singular_table_name %>, method: :delete, data: {confirm: t('messages.confirm')}
 
 %br
 .row

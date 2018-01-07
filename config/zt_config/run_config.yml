@@ -18,4 +18,4 @@ debug:
 multilingual:
   status:  false
 
-access_restricted:  true
+access_restricted:  false

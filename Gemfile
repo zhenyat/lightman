@@ -37,9 +37,10 @@
 #   16.08.2017  Rails 5.1.3
 #   09.09.2017  Rails 5.1.4;  Bootstrap 4.0.0.beta
 #   18.09.2017  Ruby 2.4.2
+#   16.01.2018  Ruby 2.5.0
 ################################################################################
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")

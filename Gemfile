@@ -38,6 +38,7 @@
 #   09.09.2017  Rails 5.1.4;  Bootstrap 4.0.0.beta
 #   18.09.2017  Ruby 2.4.2
 #   16.01.2018  Ruby 2.5.0
+#   31.01.2018  Bootstrap 4.0.0
 ################################################################################
 source 'https://rubygems.org'
 ruby '2.5.0'
@@ -97,7 +98,7 @@ gem 'faker'
 #gem 'will_paginate'
 #gem 'bootstrap-will_paginate'
 
-gem 'bootstrap', '~> 4.0.0.beta'                # Bootstrap 4:  https://github.com/twbs/bootstrap-rubygem
+gem 'bootstrap', '~> 4.0.0'                     # Bootstrap 4:  https://github.com/twbs/bootstrap-rubygem
                                                 #  depends on popper_js 1.11.1
 gem 'lightbox2-rails'                           # https://github.com/gavinkflam/lightbox2-rails
 gem 'simple_form'                               # https://github.com/plataformatec/simple_form

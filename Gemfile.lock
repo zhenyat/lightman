@@ -169,7 +169,7 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    puma (3.11.0)
+    puma (3.12.0)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.3)
@@ -293,7 +293,7 @@ DEPENDENCIES
   minitest-reporters
   mysql2 (>= 0.3.18, < 0.5)
   passenger
-  puma
+  puma (~> 3.12)
   pundit
   rails (~> 5.1.4)
   rails_12factor

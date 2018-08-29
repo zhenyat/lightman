@@ -39,6 +39,7 @@
 #   18.09.2017  Ruby 2.4.2
 #   16.01.2018  Ruby 2.5.0
 #   31.01.2018  Bootstrap 4.0.0
+#   29.08.2018  MySQL 8 (! mysql2 < 0.5 for th ecurrent rails version!) & puma > 3.12
 ################################################################################
 source 'https://rubygems.org'
 ruby '2.5.0'
@@ -66,11 +67,11 @@ gem 'react-rails'                               # https://rubygems.org/gems/reac
                                                 # Call Ruby code and manipulate Ruby objects from JavaScript.
                                                 # https://github.com/rails/execjs
 
-gem 'jquery-rails'                             # Use jquery as the JavaScript library
+gem 'jquery-rails'                              # Use jquery as the JavaScript library
 gem 'turbolinks', '~> 5'                        # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder'                                  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
-gem 'puma'                                      # Use Puma as the app server
+gem 'puma', '~> 3.12'                           # Use Puma as the app server
 
 #gem 'sdoc', group: :doc                         # bundle exec rake doc:rails generates the API under doc/api.
 gem 'bcrypt', '~> 3.1.7'                        # Use ActiveModel has_secure_password
